@@ -1,0 +1,31 @@
+/* Stil for produkter */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+
+
