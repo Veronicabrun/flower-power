@@ -33,11 +33,9 @@ async function getProducts(url) {
 
  // Legg til klikkbegivenhet for å vise detaljer om produktet
  productElement.addEventListener('click', function() {
-    // Bytt ut denne linjen med din ønskede håndtering av klikk
-    console.log('Klikket på produkt:', product.name);
+    // Naviger til enkelt produkt side med produktets ID som parameter
+    window.location.href = `product-detail.html?id=${product.id}`;
 });
-// ^^^ Legg til denne delen for å legge til en klikkbegivenhet
-
 
 
 
