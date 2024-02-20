@@ -1,20 +1,3 @@
-//const url = "https://my-first-site.local/wp-json/wc/store/products";
-//const productContainer = document.querySelector(".products")
-
-//async function getProducts(url){
-    //const response = await fetch(url);
-    //const products = await response.json();
-    //products.forEach(function(product){
-        //productContainer.innerHTML += `
-        //<div class="product"><h2>${product.name}</h2>
-        //<div class="product-image" style="background-image:url('${product.images[0].src}')
-        //</div>`
-        
-    //})
-//}
-
-//getProducts(url);
-
 const url = "https://my-first-site.local/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products");
 
@@ -31,13 +14,11 @@ async function getProducts(url) {
             `;
             productContainer.appendChild(productElement);
 
- // Legg til klikkbegivenhet for å vise detaljer om produktet
+ // Add click event to display product details
  productElement.addEventListener('click', function() {
-    // Naviger til enkelt produkt side med produktets ID som parameter
+    // Navigate to the single product page with the product's ID as a parameter
     window.location.href = `product-detail.html?id=${product.id}`;
 });
-
-
 
         });
     } catch (error) {
