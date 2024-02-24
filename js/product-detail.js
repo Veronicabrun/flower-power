@@ -3,7 +3,7 @@ const productId = urlParams.get('id');
 const productDetailContainer = document.querySelector(".product-details");
 
 async function getProductDetail(productId) {
-    const url = `https://my-first-site.local/wp-json/wc/store/products/${productId}`;
+    const url = `https://veronicabp.com/ecommerce/wp-json/wc/store/products/${productId}`;
     try {
         const response = await fetch(url);
         const product = await response.json();
@@ -25,3 +25,4 @@ async function getProductDetail(productId) {
 
 getProductDetail(productId);
 
+/*https://my-first-site.local/wp-json/wc/store/products/*/

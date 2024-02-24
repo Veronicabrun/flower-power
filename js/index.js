@@ -1,4 +1,4 @@
-const url = "https://my-first-site.local/wp-json/wc/store/products";
+const url = "https://veronicabp.com/ecommerce/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products");
 
 async function getProducts(url) {
