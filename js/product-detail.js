@@ -24,5 +24,3 @@ async function getProductDetail(productId) {
 }
 
 getProductDetail(productId);
-
-/*https://my-first-site.local/wp-json/wc/store/products/*/
